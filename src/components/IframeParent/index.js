@@ -37,7 +37,10 @@ export const IframeParent = () => {
           data-child="true"
         ></iframe>
         <div className=" w-1/12 h-screen top-0 right-0 bottom-0 bg-gray-100">
-          <Sidebar />
+          <Sidebar
+            setShowUserProfile={setShowUserProfile}
+            setShowUserPosts={setShowUserPosts}
+          />
         </div>
         {/* {check if the object has keys} */}
         {Object.keys(userProfile).length > 0 && (

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Sidebar() {
+export default function Sidebar({ setShowUserProfile, setShowUserPosts }) {
   return (
     <div className="hidden fixed w-28 h-screen bg-indigo-700 overflow-y-auto md:block">
       <div className="w-full py-6 flex flex-col items-center">
@@ -9,8 +9,9 @@ export default function Sidebar() {
         </div>
         <div className="flex-1 mt-6 w-full px-2 space-y-1">
           <a
-            href="www.google.com"
+            href="#"
             className="text-indigo-100 hover:bg-indigo-800 hover:text-white group w-full p-3 rounded-md flex flex-col items-center text-xs font-medium"
+            onClick={() => setShowUserProfile(true)}
           >
             <svg
               className="text-indigo-300 group-hover:text-white h-6 w-6"
@@ -33,6 +34,7 @@ export default function Sidebar() {
           <a
             href="#"
             className="text-indigo-100 hover:bg-indigo-800 hover:text-white group w-full p-3 rounded-md flex flex-col items-center text-xs font-medium"
+            onClick={() => setShowUserPosts(true)}
           >
             <svg
               className="text-indigo-300 group-hover:text-white h-6 w-6"

@@ -15,7 +15,7 @@ export default function PostsSidebarOverlay({
       role="dialog"
       aria-modal="true"
     >
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden ">
         {/* <!-- Background overlay, show/hide based on slide-over state. --> */}
         <div className="absolute inset-0" aria-hidden="true"></div>
 
