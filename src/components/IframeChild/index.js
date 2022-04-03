@@ -25,21 +25,17 @@ export const IframeChild = () => {
   const sendPosts = (e) => {
     // get the parent element
     const parent = e.target.parentElement;
-    console.log("parent: ", parent);
     // get the parent element's parent element
     const grandparent = parent.parentElement;
-    console.log("grandparent: ", grandparent);
     // get the value of attribute: data-user
     const userId = grandparent.getAttribute("data-userid");
     const userProfile = grandparent.getAttribute("data-user");
-    console.log("userID: ", userId);
     fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`)
       .then((response) => response.json())
       .then((data) => {
         setPosts(data);
         setUserProfile(JSON.parse(userProfile));
       });
-    console.log("user: ", posts);
   };
 
   useEffect(() => {
