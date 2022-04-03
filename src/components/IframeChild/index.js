@@ -18,7 +18,7 @@ export const IframeChild = () => {
         action: "profile",
         data: JSON.parse(user),
       },
-      "http://localhost:3000"
+      "*"
     );
   };
 
@@ -51,7 +51,7 @@ export const IframeChild = () => {
           userProfile: userProfile,
         },
       },
-      "http://localhost:3000"
+      "*"
     );
   }, [posts, userProfile]);
 

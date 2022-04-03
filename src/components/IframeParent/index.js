@@ -11,7 +11,7 @@ export const IframeParent = () => {
 
   useEffect(() => {
     window.addEventListener("message", function (e) {
-      if (e.origin !== "http://localhost:3000") return;
+      //   if (e.origin !== "http://localhost:3000") return;
       if (e.data.action == "profile") {
         setUserProfile(e.data.data);
         setShowUserProfile(true);
