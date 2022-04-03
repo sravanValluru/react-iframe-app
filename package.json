@@ -23,7 +23,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "docker-build": "docker build -t react-iframe-app .",
-    "docker-run": "docker run -p 80:80 react-iframe-app"
+    "docker-run": "docker run -p 80:80 react-iframe-app",
+    "docker-tag": "docker tag react-iframe-app sravanvalluru/react-iframe-app:alpine",
+    "docker-push": "docker push sravanvalluru/react-iframe-app:alpine"
   },
   "eslintConfig": {
     "extends": [
