@@ -17,7 +17,6 @@ export const IframeParent = () => {
         setShowUserProfile(true);
       }
       if (e.data.action == "posts") {
-        console.log("e.data.data: ", e.data.data);
         setUserPosts(e.data.data.posts);
         setUserProfile(e.data.data.userProfile);
         setShowUserPosts(true);

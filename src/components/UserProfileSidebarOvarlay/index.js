@@ -15,16 +15,6 @@ export default function UserProfileSidebarOverlay({
         <div className="absolute inset-0" aria-hidden="true"></div>
 
         <div className="fixed inset-y-0 right-0 pl-10 max-w-full flex sm:pl-16">
-          {/* <!--
-        Slide-over panel, show/hide based on slide-over state.
-
-        Entering: "transform transition ease-in-out duration-500 sm:duration-700"
-          From: "translate-x-full"
-          To: "translate-x-0"
-        Leaving: "transform transition ease-in-out duration-500 sm:duration-700"
-          From: "translate-x-0"
-          To: "translate-x-full"
-      --> */}
           <div className="w-screen max-w-md">
             <div className="h-full flex flex-col bg-white shadow-xl overflow-y-scroll">
               <div className="px-4 py-6 sm:px-6">
@@ -41,7 +31,7 @@ export default function UserProfileSidebarOverlay({
                       className="bg-white rounded-md text-gray-400 hover:text-gray-500 focus:ring-2 focus:ring-indigo-500"
                     >
                       <span className="sr-only">Close panel</span>
-                      {/* <!-- Heroicon name: outline/x --> */}
+
                       <svg
                         className="h-6 w-6"
                         xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +51,7 @@ export default function UserProfileSidebarOverlay({
                   </div>
                 </div>
               </div>
-              {/* <!-- Main --> */}
+
               <div>
                 <div className="pb-1 sm:pb-6">
                   <div>
